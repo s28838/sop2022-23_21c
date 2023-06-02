@@ -1,0 +1,12 @@
+#!/bin/bash
+
+text="$1"
+
+first_char="${text:0:1}"
+echo "Pierwszy znak: $first_char"
+
+last_char="${text: -1}"
+echo "Ostatni znak: $last_char"
+
+modified_text="${text//SOP/\\e[32mSOP\\e[0m}"
+echo -e "Zmodyfikowany tekst: $modified_text"

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+x=$(ls -l)
+echo "$x"
+
+#Każda nazwa pliku i katalogu zostanie wyświetlona jako oddzielne słowo, a nie zachowana w oryginalnej strukturze, jak to jest w przypadku wywołania samej komendy "ls -l".
