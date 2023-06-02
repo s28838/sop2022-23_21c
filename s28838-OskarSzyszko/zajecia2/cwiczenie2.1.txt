@@ -1,0 +1,8 @@
+#!/bin/bash
+
+X=tekst
+echo $X
+bash
+echo $X
+
+#Skrypt wyświetla wartość zmiennej X, otwiera nową powłokę, a następnie próbuje wyświetlić wartość zmiennej X w tej nowej powłoce, chociaż będzie to pusta wartość.

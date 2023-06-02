@@ -1,0 +1,11 @@
+#!/bin/bash
+
+X="Tekst 1"
+Y="tekst:$X"
+echo "$Y"
+Y='tekst:$X'
+echo "$Y"
+Y=tekst:$X
+echo "$Y"
+
+#Skrypt wyświetla różne wartości zmiennej Y, w zależności od tego, czy użyto pojedynczych lub podwójnych cudzysłowów oraz czy wartość zmiennej X została zinterpretowana jako zmienna.

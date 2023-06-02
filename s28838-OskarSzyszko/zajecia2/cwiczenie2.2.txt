@@ -1,0 +1,7 @@
+#!/bin/bash
+
+x="Tekst dłuższy"
+
+echo $x
+
+#Skrypt wyświetla zawartość zmiennej x, która jest ustawiona na "Tekst dłuższy".

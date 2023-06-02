@@ -1,0 +1,14 @@
+#!/bin/bash
+
+filename="$1"
+imie="Oskar"
+
+if [ ! -f "$filename" ]; then
+    echo "Podany plik nie istnieje."
+    exit 1
+fi
+
+while IFS= read -r line; do
+    modified_line=$(echo "$line" | sed "s/$imie/\\e[31m&\\e[0m/g")
+    echo -e "$modified_line"
+done < "$filename"

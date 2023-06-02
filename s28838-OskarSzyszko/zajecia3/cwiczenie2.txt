@@ -1,0 +1,56 @@
+1.
+#!/bin/bash
+
+for ((i=10; i>=1; i-=2)); do
+    echo $i
+done
+
+2.
+#!/bin/bash
+
+for arg in "$@"; do
+    echo "\"$arg\""
+done
+
+3.
+#!/bin/bash
+
+IFS=$'\n'
+
+for entry in $(ls -1); do
+    echo "Patrzcie Państwo, oto plik: $entry"
+done
+
+4.
+#!/bin/bash
+
+for file in *.c; do
+    filename="${file%.*}"
+    cc "$file" -o "$filename"
+done
+
+5.
+#!/bin/bash
+
+files=("$@")
+num_files=${#files[@]}
+
+for ((i=0; i<num_files; i++)); do
+    file="${files[i]}"
+    echo "Zawartość pliku $file:"
+    while IFS= read -r line; do
+        echo "$line"
+    done < "$file"
+    echo
+done
+
+for ((i=num_files-1; i>=0; i--)); do
+    file="${files[i]}"
+    echo "Zawartość pliku $file (odwrotnie):"
+    while IFS= read -r -N 1 char; do
+        content="$char$content"
+    done < "$file"
+    echo "$content"
+    echo
+    content=""
+done

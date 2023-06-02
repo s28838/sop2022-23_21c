@@ -1,0 +1,13 @@
+#!/bin/bash
+
+input=$1
+
+if grep -qE '^[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+$' <<< "$input"; then
+    echo "Imię"
+elif grep -qE '^[0-9]{2}-[0-9]{3}$' <<< "$input"; then
+    echo "Kod pocztowy"
+elif grep -qE '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$' <<< "$input"; then
+    echo "E-mail"
+else
+    echo "Nieznany format"
+fi

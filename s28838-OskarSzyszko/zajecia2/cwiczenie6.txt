@@ -1,0 +1,6 @@
+#!/bin/bash
+
+A1=Ala
+A2=$(echo $A1 | sed s/a$/ę/g)
+
+echo $A1 ma kota, a kot ma $A2

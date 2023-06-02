@@ -1,0 +1,16 @@
+2023-03-18
+Moj kochany pamietniczku na dzisiejszych zajeciach :
+-powtozylem jak sie twozy wirtualne maszyny, czego sie nauczylem uczeszczajac do technikum
+
+Prowadzoncy przyblizył nam plan naucznia na ten semestr, a nastepnie opisal instalacje Debian'a w VirtualBox.
+
+Zaskoczyla mnie troche ilosc wszystkich opcji przy instalacji Debian'a ponieraz w technikum nie zaglembialismy sie az tak w ten temat.
+
+Zajecia sa przyjemne i dobrze prowadzone choc czasami ilosc informacji jestt troche przytlaczajeca.
+
+2023-04-01
+Moj kochany pamietniczku na dzisiejszych zajeciach nauczylem sie:
+-o powłokach linuxa
+-sposobach wykorzystania narzędzia sed
+
+Prowadzacy na zajeciach przedstawil nam bash'a ktorego poruszylem juz w technikum ana zajeciach ale tylko powieszchniowo wiec jak na razie zajecia byly zrozumiale.

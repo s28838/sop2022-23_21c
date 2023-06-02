@@ -1,0 +1,52 @@
+1.
+#!/bin/bash
+
+if [ $# -gt 1 ]; then
+    echo "Pierwszy parametr: $1"
+elif [ $# -eq 0 ]; then
+    echo "Nie podano parametrów."
+else
+    echo "Pierwszy parametr: $1"
+fi
+
+2.
+#!/bin/bash
+
+if [ -f "config.cfg" ]; then
+    echo "Wykonuję plik config.cfg"
+    ./config.cfg
+elif [ $# -eq 1 ]; then
+    if [ -f "$1" ]; then
+        echo "Wykonuję plik $1"
+        ./"$1"
+    else
+        echo "Podany plik nie istnieje."
+    fi
+else
+    echo "Brak pliku config.cfg oraz nie podano argumentu."
+fi
+
+3.
+#!/bin/bash
+
+filename=$(basename "$0")
+
+if [[ $filename != *.sh ]]; then
+    new_filename="${filename}.sh"
+    echo "Zmieniam nazwę skryptu na $new_filename"
+    mv "$filename" "$new_filename"
+else
+    echo "Nazwa skryptu jest poprawna."
+fi
+
+4.
+#!/bin/bash
+
+file_count=$(ls -1 | wc -l)
+
+if [ "$file_count" -gt 5 ]; then
+    echo "W bieżącym katalogu jest więcej niż 5 plików."
+else
+    echo "W bieżącym katalogu nie ma więcej niż 5 plików."
+fi
+

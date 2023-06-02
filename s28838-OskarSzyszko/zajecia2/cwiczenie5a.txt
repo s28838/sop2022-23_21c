@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+  echo "Brak podanego argumentu."
+  exit 1
+fi
+
+name=$1
+len=${#name}
+
+if [[ $name == *"a" ]]; then
+  name=${name::$len-1}
+  echo "${name}a ma kota, a kot ma ${name}ę"
+
+else
+  echo "$name ma kota, a kot ma ${name}a"
+fi
+
+#Skrypt ten jest możliwy w czystym bashu

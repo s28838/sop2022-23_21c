@@ -1,0 +1,9 @@
+PATH - Zmienna przechowująca ścieżki do programów systemowych.
+RANDOM - Zmienna przechowująca losową liczbę całkowitą.
+PWD - Zmienna przechowująca bieżący katalog roboczy.
+PS1 - Zmienna przechowująca znacznik wiersza poleceń (prompt).
+USER - Zmienna przechowująca nazwę bieżącego użytkownika.
+HOSTNAME - Zmienna przechowująca nazwę hosta komputera.
+OSTYPE - Zmienna przechowująca informacje o typie systemu operacyjnego.
+
+Te zmienne mogą być używane w skryptach Bash do dostosowywania zachowania kodu w zależności od bieżącego kontekstu systemowego, użytkownika, katalogu itp.
